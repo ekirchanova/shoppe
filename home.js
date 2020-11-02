@@ -3,8 +3,6 @@ function highlight(name_element,color) {
     let elements = document.getElementsByTagName(name_element);
     elements = shuffle(elements);
     const  rand = Math.floor( Math.random() * elements.length );
-    console.log(name_element);
-
     elements[rand].style.backgroundColor = color
 }
 function shuffle(arr){
